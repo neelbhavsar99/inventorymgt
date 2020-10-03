@@ -25,7 +25,7 @@ SECRET_KEY = 'n4h&4@*w_pgxzpuc(ir52*vv(iu4-4pnd%v!6y&e2ta2*bjd1!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['inventorymgtapp.heroku.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
