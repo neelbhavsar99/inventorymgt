@@ -3,21 +3,7 @@ import pandas as pd
 import sklearn
 from sklearn import linear_model
 
-def ProcessData():
-    # sold, available, COGS, retail price of inv, cost, MSRP
-    #ToBeProcessed1 = np.loadtxt('ToBeProcessed1.csv', delimiter=',')
-    ToBeProcessed2 = np.loadtxt('DataSets/ToBeProcessed2.csv', delimiter=',', skiprows=1)
-    Processed2 = []
-    for data in ToBeProcessed2:
-        if (data[4] < data[5]):
-            Processed2.append(data)
-
-    np.savetxt('DataSets/Processed2.csv', Processed2, delimiter=',')
-
-
-
 if __name__ == '__main__':
-    #ProcessData()
     # sales, label, cost, MSRP, month, mon, tues, wed, thurs, fri, sat, sun
     data = pd.read_csv("DataSets\ForUse2.csv",sep = ',')
     #print(data)
