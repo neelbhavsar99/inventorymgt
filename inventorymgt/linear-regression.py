@@ -6,7 +6,6 @@ from sklearn import linear_model
 if __name__ == '__main__':
     # sales, label, cost, MSRP, month, mon, tues, wed, thurs, fri, sat, sun
     data = pd.read_csv("DataSets\ForUse2.csv",sep = ',')
-    #print(data)
     data = data[['sales','label','cost','msrp','month','mon','tues','wed','thurs','fri','sat','sun']]
     predict = 'label'
 
