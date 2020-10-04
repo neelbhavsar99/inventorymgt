@@ -1,0 +1,37 @@
+{% extends "base.html" %} {%block content%}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Hello RBC Guest</h1>
+    <h5>Welcome!</h5>
+  </div>
+</div>
+<div class="container" style-"text-align:center">
+    
+  <div class="row" style="color: black">
+  <h4>Please enter your sales data below:</h4>
+  <br>
+    <form name="form" action="" method="POST">
+      {%csrf_token %} {{form.as_p}}<br>
+      <input class="btn btn-lg btn-default" type="submit" />
+    </form>
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+      <li {% if message.tags %} class=" {{ message.tags }} " {% endif %}>
+        {{ message }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <br>
+    <hr />
+  </div>
+  
+  <div class="row">
+  <a type="button" class="btn btn-lg btn-default" href="{% url 'index' %}"
+    ><span class="glyphicon glyphicon-flash"></span>Return to Home</a>
+
+  </div>
+</div>
+{%endblock%}
