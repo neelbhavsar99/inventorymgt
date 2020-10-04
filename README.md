@@ -9,4 +9,4 @@ This web application uses linear regression testing model (Artificial Intelligen
 * Database: Relational DB System (SQLite) 🔃 🔧
 
 ## Authors
-* Justin Tran, Siddharth Pathak, 
+* Justin Tran, Siddharth Pathak, Neel Bhavsar
