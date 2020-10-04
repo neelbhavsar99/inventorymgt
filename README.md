@@ -7,3 +7,6 @@ This web application uses linear regression testing model (Artificial Intelligen
 * Full-stack Web Framework used: Django 🐍💻😏
 * Machine Learning Model: Linear Regression 📈
 * Database: Relational DB System (SQLite) 🔃 🔧
+
+## Authors
+* Justin Tran, Siddharth Pathak, 
