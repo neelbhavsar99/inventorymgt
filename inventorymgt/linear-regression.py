@@ -23,6 +23,3 @@ if __name__ == '__main__':
 
     for x in range(len(predictions)):
         print((int) (predictions[x]),x_test[x],y_test[x])
-
-
-
