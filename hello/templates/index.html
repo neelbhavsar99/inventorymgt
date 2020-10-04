@@ -1,0 +1,116 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'logo.png'%}" />
+    </a>
+    <h1>InventoryMan</h1>
+    <p>By Siddharth, Justin and Neel</p>
+    <p>
+      Helping local small businesses provide solutions on inventory purchasing.
+    </p>
+    <a
+      type="button"
+      class="btn btn-lg btn-default"
+      href="https://github.com/siddharthpk/inventorymgt"
+      ><span class="glyphicon glyphicon-flash"></span> GitHub Repo</a
+    >
+  </div>
+</div>
+<div class="container">
+  <div
+    class="alert alert-info text-center"
+    role="alert"
+    style="font-size: large"
+  >
+    Fill out the form to get started!
+  </div>
+  <hr />
+  <div class="container" style="text-align:center;width:large">
+    <a
+      type="button"
+      class="btn btn-lg btn-default"
+      style="text-align: center"
+      href="{% url 'create' %}"
+      ><span
+        class="glyphicon glyphicon-flash"
+        style="text-align: center"
+      ></span>
+      Record Sale
+    </a>
+  </div>
+  <div class="row" style="text-align:center">
+    <div class="col-md-12" >
+    <br>
+      <h2>
+        <span class="glyphicon glyphicon-info-sign"></span> How InventoryMan
+        works <br><br>
+      </h2>
+      <ul style="text-align:left">
+          Its simple. We use a linear regression testing model (Artificial Intelligence)
+          which does various forms of test and provides the prediction of how many products to purchase on a monthly basis.
+        <br><br>
+          <p><b>Step 1.</b> Connect through a third-party service API call or POS data source to InventoryMan. If you are an RBC Employee, all you have to do is enter your inventory details through POS Data (CSV format).</p>
+          <p><b>Step 2.</b> You can even enter some sales manually through the button above.</p>
+          <p><b>Step 3.</b> See the predictions and get an accurate recommendation on how much of a product to purchase!</p>
+        <br>
+        <p>RBC is able to view the data of your inventory overtime and can help craft a better RBC product. For example: an increase in RBC's Small Business Banking Loan, or improvements in your Businesss insurance rate!</p> 
+        <br>
+      </ul>
+    </div>
+    </div>
+    <div class="row"style="text-align:center">
+    <div class="col-md-12" style="text-align:center">
+      <h2><span class="glyphicon glyphicon-link" ></span> Linear Regression Model Results</h2>
+        <h5>Enter the month that you want to see the product performance:</h5>
+        <br>
+        <form name="form" action="" method="POST">
+          {%csrf_token %} {{form.as_p}}<br>
+        <input class="btn btn-lg btn-default" type="submit" />
+        </form>
+        <br>
+      
+      <h3>The accuracy of the model: {{percentage}}</h3><br>
+      <ul style="text-align:center">
+        <p><b>Array of Items</b></p>
+        <table style="margin-left:auto;margin-right:auto;">
+        <tr >
+          <th > SKU</th>
+          <th > Prediction </th>
+        {% for ab in third %}
+        </tr>
+        <tr >
+          <td>{{ab.0}}</td>
+          <td>{{ab.1}}</td>
+        </tr>
+        
+        {% endfor %}
+      </table>
+      </ul>
+      <br>
+      <h2><span class="glyphicon glyphicon-link"></span> Contact the InventoryManZ :)</h2>
+      <ul>
+        <h3><a href="https://github.com/JustinBTran">Justin Tran</a></h3>
+        <h3><a href="https://github.com/neelbhavsar99">Neel Bhavsar</a></h3>
+        
+          <h3><a
+            href="http://github.com/siddharthpk"
+            >Siddharth Pathak</a
+          ></h3>
+        
+        
+          <h3><a
+            href=""
+            >No 4th Teammate :(</a
+          ></h3>
+        
+      </ul>
+    </div>
+    <br>
+  </div>
+  </div><br><br>
+  <!-- row -->
+  <div class="alert alert-info text-center" role="alert">Copyright 2020.</div>
+</div>
+{% endblock %}
