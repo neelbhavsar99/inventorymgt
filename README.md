@@ -9,8 +9,8 @@ This web application uses linear regression testing model (Artificial Intelligen
 * Database: Relational DB System (SQLite) 🔃 🔧
 
 ## Images
-![alt text](https://github.com/siddharthpathak/inventorymgt/blob/main/InventoryMan.png?raw=true)
-
+![Landing Page](https://github.com/siddharthpathak/inventorymgt/blob/main/InventoryMan.png?raw=true)
+![Screenshot](InventoryMan.png)
 ## Authors
 * Justin Tran, Siddharth Pathak, Neel Bhavsar
 
