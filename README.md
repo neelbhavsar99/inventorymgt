@@ -8,13 +8,18 @@ This web application uses linear regression testing model (Artificial Intelligen
 * Machine Learning Model: Linear Regression 📈
 * Database: Relational DB System (SQLite) 🔃 🔧
 
-## Images
-![Screenshot](InventoryMan.png)
-![Screenshot](SS3.png)
-![Screenshot](SS2.png)
-![Screenshot](LinearProgression.png)
-
 ## Authors
 * Justin Tran, Siddharth Pathak, Neel Bhavsar
+
+## Images
+![Screenshot](InventoryMan.png)
+-----
+![Screenshot](SS3.png)
+-----
+![Screenshot](SS2.png)
+-----
+![Screenshot](LinearProgression.png)
+
+
 
 
